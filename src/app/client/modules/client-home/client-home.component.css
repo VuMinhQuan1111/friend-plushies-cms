@@ -1,0 +1,26 @@
+.category{
+  alignment: center;
+  background:lightgray;
+  border-radius: 10px ;
+  box-shadow: 10px 10px 5px 5px #aaaaaa;
+}
+
+.category_image{
+  width:100%;
+  border-radius: 10px;
+  height:300px;
+
+}
+
+.category_details{
+  text-align: center;
+}
+
+.category{
+  transition: transform .5s;
+  cursor:pointer;
+}
+
+.category:hover{
+  transform: scale(1.1);
+}

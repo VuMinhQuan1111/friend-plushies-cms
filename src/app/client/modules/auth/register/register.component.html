@@ -1,0 +1,95 @@
+<!--<div class="container-fluid">-->
+<!--  <div class="row">-->
+<!--    <div class="registerPage">-->
+<!--      <div class="register_banner col-xl-8 col-lg-0 col-md-0 col-sm-0 col-0">-->
+<!--        <img class="back_to_school2" src="assets/images/register-banner.jpg">-->
+<!--      </div>-->
+<!--      <div class="register_formation col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">-->
+<!--        <form class="register-form pt-5 mt-5" [formGroup]="form">-->
+<!--          <h2 style="text-align: center">REGISTER</h2>-->
+<!--          &lt;!&ndash;          <p>Hi, welcome to E-Learning Platform</p>&ndash;&gt;-->
+<!--          <form [formGroup]="form" (ngSubmit)="submit()">-->
+<!--            <div class="form-group" [ngClass]="showError('username')">-->
+<!--              <label for="username">User Name: </label><br>-->
+<!--              <input [class.is-invalid]="name!.invalid && name!.touched" type="text" id="username" name="username"-->
+<!--                     formControlName="username"-->
+<!--                     class="form-control" placeholder="User name">-->
+<!--              &lt;!&ndash;[(ngModel)]="signUpObj.username"&ndash;&gt;-->
+
+<!--&lt;!&ndash;              <div *ngIf="name!.invalid && name!.touched">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div *ngIf="name!.errors?.required" class="text-danger">Username is required</div>&ndash;&gt;-->
+<!--&lt;!&ndash;              </div>&ndash;&gt;-->
+<!--            </div>-->
+
+<!--            <div class="form-group" [ngClass]="showError('password')">-->
+<!--              <label for="password">Password: </label><br>-->
+<!--              <input [class.is-invalid]="pass!.invalid && pass!.touched" [type]="changeType?'password':'text'"-->
+<!--                     id="password"-->
+<!--                     name="password" formControlName="password"-->
+<!--                     class="form-control"-->
+<!--                     placeholder="Password">-->
+<!--              &lt;!&ndash;[(ngModel)]="signUpObj.password"&ndash;&gt;-->
+
+<!--              <div *ngIf="pass!.invalid && pass!.touched">-->
+<!--                <div *ngIf="pass!.errors?.required" class="text-danger">Password is required</div>-->
+<!--                <div *ngIf="pass!.errors?.minlength" class="text-danger">Password must be at least 8 characters</div>-->
+<!--                <div *ngIf="pass!.errors?.pattern" class="text-danger">Password is not strong enough</div>-->
+<!--              </div>-->
+
+<!--              <div style="margin-top: 5px">-->
+<!--                <input (click)="showPassword()" type="checkbox" value="submit">-->
+<!--                <label style="margin-left: 5px"> Show password</label>-->
+<!--              </div>-->
+<!--            </div>-->
+
+<!--            <div class="form-group" [ngClass]="showError('confirmPassword')">-->
+<!--              <label for="confirmPassword">Confirm Password: </label><br>-->
+<!--              <input [class.is-invalid]="pass2!.invalid && pass2!.touched" [type]="changeType2?'password':'text'"-->
+<!--                     id="confirmPassword" name="confirmPassword"-->
+<!--                     formControlName="confirmPassword" class="form-control"-->
+<!--                     placeholder="Confirm Password">-->
+<!--              &lt;!&ndash;[(ngModel)]="signUpObj.confirmPassword"&ndash;&gt;-->
+
+<!--              <div *ngIf="pass2!.invalid && pass2!.touched">-->
+<!--                <div *ngIf="pass2!.errors?.required" class="text-danger">Confirm password is required</div>-->
+<!--              </div>-->
+<!--              <div *ngIf="form.errors?.['passwordMismatchError']">-->
+<!--                <span class="text-danger">Confirm password not match</span>-->
+<!--              </div>-->
+<!--              <div style="margin-top: 5px">-->
+<!--                <input (click)="showPassword2()" type="checkbox" value="submit">-->
+<!--                <label style="margin-left: 5px"> Show password</label>-->
+<!--              </div>-->
+<!--            </div>-->
+
+<!--            <div class="form-group" [ngClass]="showError('type')">-->
+<!--              <label for="type">Account Type: </label><br>-->
+<!--              <select [class.is-invalid]="type!.invalid && type!.touched" class="form-control" id="type" name="type"-->
+<!--                      formControlName="type">-->
+<!--                &lt;!&ndash;[(ngModel)]="signUpObj.type"&ndash;&gt;-->
+<!--                <option value="">&#45;&#45;Select&#45;&#45;</option>-->
+<!--                <option value="student">Student</option>-->
+<!--                <option value="teacher">Teacher</option>-->
+<!--              </select>-->
+<!--              &lt;!&ndash;      <span style="color: red" *ngIf="type && type.invalid && type.touched">This Field is required</span>&ndash;&gt;-->
+<!--              <div *ngIf="type!.invalid && type!.touched">-->
+<!--                <div *ngIf="type!.errors?.required" class="text-danger">Type is required</div>-->
+<!--              </div>-->
+
+<!--            </div>-->
+
+<!--            <div class="form-group">-->
+<!--              <button class="btn pop-register mt-1" type="submit" [disabled]="form.invalid">Submit</button>-->
+<!--              &lt;!&ndash;[disabled]="registerForm.invalid"&ndash;&gt;-->
+<!--            </div>-->
+
+<!--            <div style="text-align: center" class="form-group">-->
+<!--            <span>You have account? Go to <a class="routerLogin"-->
+<!--                                             routerLinkActive="active" [routerLink]="['/login']"> Log in</a></span>-->
+<!--            </div>-->
+<!--          </form>-->
+<!--        </form>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
