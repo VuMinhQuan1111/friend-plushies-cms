@@ -1,35 +1,24 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {LOCALE_ID, NgModule} from '@angular/core';
 
-import { AppComponent } from './app.component';
+import {AppComponent} from './app.component';
 import {RouterModule} from '@angular/router';
 import {AppRoutingModule} from './app-routing.module';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
-import { AdminComponent } from './admin/admin.component';
-import { ClientComponent } from './client/client.component';
-import { AdminHomeComponent } from './admin/modules/admin-home/admin-home.component';
-import { AdminRoutingModule} from './admin/admin-routing.module';
-import {ClientRoutingModule} from './client/client-routing.module';
-import { NavbarComponent } from './client/modules/layout/navbar/navbar.component';
-import { CarouselComponent } from './client/modules/layout/carousel/carousel.component';
-import { FooterComponent } from './client/modules/layout/footer/footer.component';
-import { ClientHomeComponent } from './client/modules/client-home/client-home.component';
-import { HomeProductCardComponent } from './client/modules/client-home/home-product-card/home-product-card.component';
-import {HomeSliderComponent} from './client/modules/client-home/home-slider/home-slider.component';
-import {ProductPageComponent} from './client/modules/product-page/product-page.component';
-import { LogInComponent } from './client/modules/auth/log-in/log-in.component';
-import { RegisterComponent } from './client/modules/auth/register/register.component';
-import {MatButtonModule} from '@angular/material/button';
-import {MatMenuModule} from '@angular/material/menu';
-import {ClientModule} from './client/client.module';
-import {AdminModule} from './admin/admin.module';
-
+import {LocationStrategy, PathLocationStrategy} from '@angular/common';
+import {NbLayoutComponent, NbLayoutModule, NbRouteTabsetModule, NbTabsetModule, NbThemeModule} from '@nebular/theme';
+import {ClientModule} from './modules/client/client.module';
+import {AdminModule} from './modules/admin/admin.module';
+import {LayoutComponent} from './modules/client';
+import {HttpClientModule} from '@angular/common/http';
+import {NgImageSliderModule} from 'ng-image-slider';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    LayoutComponent,
     // HomeSliderComponent,
     // AdminComponent,
     // ClientComponent,
@@ -41,8 +30,7 @@ import {AdminModule} from './admin/admin.module';
     // HomeProductCardComponent,
     // ProductPageComponent,
     // LogInComponent,
-    // RegisterComponent,
-
+    // RegisterComponent,=
 
   ],
   imports: [
@@ -51,16 +39,22 @@ import {AdminModule} from './admin/admin.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatIconModule,
-    AdminRoutingModule,
-    ClientRoutingModule,
     ClientModule,
     AdminModule,
-    AdminRoutingModule,
+    NbLayoutModule,
+    HttpClientModule,
+    NbThemeModule.forRoot(),
+    NbTabsetModule,
+    NbRouteTabsetModule,
+    NgImageSliderModule
   ],
-  providers: [],
+  providers: [{provide: LOCALE_ID, useValue: 'en'},
+    {provide: LocationStrategy, useClass: PathLocationStrategy},
+  ],
   exports: [
     // HomeSliderComponent
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
