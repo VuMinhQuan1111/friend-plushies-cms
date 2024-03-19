@@ -13,7 +13,7 @@ import {NgForOf} from '@angular/common';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  featured = [
+  /*featured = [
     {
       img: './assets/image/product/basic-cat.jpg',
       title: 'Basic cat plush',
@@ -42,5 +42,5 @@ export class HomeComponent {
       price: 90000,
       description: 'A basic, white, round cat wearing a ninja costume'
     }
-  ];
+  ];*/
 }

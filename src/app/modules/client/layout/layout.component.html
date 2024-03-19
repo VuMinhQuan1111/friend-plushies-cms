@@ -1,8 +1,72 @@
 <nb-layout>
-  <nb-layout-footer></nb-layout-footer>
+
   <nb-layout-column class="override-padding">
-<ng-image-slider [images]="imgCollection" [autoSlide]="1" [infinite]="true"
-                 [imageSize]="{width: '33%', height: '40%'}"></ng-image-slider>
+    <ng-image-slider [images]="imgCollection" [autoSlide]="1" [infinite]="true"
+                     [imageSize]="{width: '33%', height: '40%'}"></ng-image-slider>
     <nb-route-tabset [tabs]="tabs"></nb-route-tabset>
   </nb-layout-column>
+  <nb-layout-footer>
+    <div class="container">
+      <div class="row">
+        <div class="footer_widget col-lg-3 col-md-3 col-sm-3 col-12">
+          <div class="footer_info">
+            <h4>Information</h4>
+          </div>
+          <div class="footer_formation">
+            <p>4967 Sardis Sta, Victoria 8007, Montreal.</p>
+
+            <p>+1 246-345-0695</p>
+
+            <!--<p>info@learnup.com</p>-->
+          </div>
+        </div>
+        <div class="footer_widget col-lg-3 col-md-3 col-sm-3 col-12">
+          <div class="footer_info">
+            <div class="footer_title">
+              <h4>Navigation</h4>
+            </div>
+            <ul class="footer_content">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Checkout</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_widget col-lg-3 col-md-3 col-sm-3 col-12">
+          <div class="footer_info">
+            <div class="footer_title">
+              <h4>Categories</h4>
+            </div>
+            <ul class="footer_content">
+              <li><a href="#">Math</a></li>
+              <li><a href="#">Chemistry</a></li>
+              <li><a href="#">Physics</a></li>
+              <li><a href="#">Biology</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_widget col-lg-3 col-md-3 col-sm-3 col-12">
+          <div class="footer_info">
+            <h4>Help And Support</h4>
+          </div>
+          <ul class="footer_content">
+            <li><a href="#">Mail us</a></li>
+            <li><a href="#">Live chat</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Faqs</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <!--<div class="footer_bottom">
+      <div class="container">
+        <div class="align-item-center">
+          <div class="web_author">
+            <p>Designd By <a href="#"> E-Learning</a></p>
+          </div>
+        </div>
+      </div>
+    </div>-->
+  </nb-layout-footer>
 </nb-layout>

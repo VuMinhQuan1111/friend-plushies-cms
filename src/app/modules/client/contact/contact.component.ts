@@ -2,14 +2,14 @@ import { Component } from '@angular/core';
 import {NbCardModule} from '@nebular/theme';
 
 @Component({
-  selector: 'app-intro',
+  selector: 'app-contact',
   standalone: true,
   imports: [
     NbCardModule,
   ],
-  templateUrl: './intro.component.html',
-  styleUrl: './intro.component.css'
+  templateUrl: './contact.component.html',
+  styleUrl: './contact.component.css'
 })
-export class IntroComponent {
+export class ContactComponent {
 
 }

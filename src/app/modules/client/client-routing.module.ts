@@ -4,6 +4,7 @@ import {LayoutComponent} from './layout';
 import {HomeComponent} from './home/home.component';
 import {IntroComponent} from './intro/intro.component';
 import {ProductComponent} from './product/product.component';
+import {ContactComponent} from './contact/contact.component';
 
 const routes: Routes = [{
   path: '',
@@ -20,6 +21,10 @@ const routes: Routes = [{
     {
       path: 'product',
       component: ProductComponent,
+    },
+    {
+      path: 'contact',
+      component: ContactComponent,
     },
     {
       path: '',
