@@ -1,3 +1,18 @@
+::ng-deep .nb-theme-default nb-route-tabset .route-tabset {
+  justify-content: center; }
+::ng-deep .nb-theme-default nb-layout .layout .layout-container .content nb-layout-footer nav {
+  /*background: #F5E2A8;*/
+}
+
+
 .override-padding {
   padding: 0 !important;
+}
+
+.image {
+  object-fit: contain;
+}
+
+.max-height {
+  max-height: 50px !important;
 }

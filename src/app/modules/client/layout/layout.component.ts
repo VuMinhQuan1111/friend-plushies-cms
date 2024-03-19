@@ -8,11 +8,6 @@ import {Component} from '@angular/core';
 export class LayoutComponent {
   tabs: any[] = [
     {
-      src: './assets/image/Logo/Logo.png',
-      route: '#',
-      responsive: true,
-    },
-    {
       title: 'Trang chủ',
       route: '/client/home',
       responsive: true,

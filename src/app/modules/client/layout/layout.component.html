@@ -3,7 +3,12 @@
   <nb-layout-column class="override-padding">
     <ng-image-slider [images]="imgCollection" [autoSlide]="1" [infinite]="true"
                      [imageSize]="{width: '33%', height: '40%'}"></ng-image-slider>
-    <nb-route-tabset [tabs]="tabs"></nb-route-tabset>
+    <div class="row p-0">
+        <img class="image max-height" src="assets/image/Logo/Logo.png" alt="Home">
+    </div>
+    <div class="row p-0 justify-content-center">
+      <nb-route-tabset [tabs]="tabs"></nb-route-tabset>
+    </div>
   </nb-layout-column>
   <nb-layout-footer>
     <div class="container">
