@@ -6,33 +6,44 @@
 
     </div>-->
     <div class="container">
-      <div class="row">
-        <div class="category-card col-lg-4 col-md-4 col-sm-12 col-12">
-          <img class="category-image" src="assets/image/homepage/Animal.jpg">
-          <h3 class="category-title">Động vật</h3>
+      <div class="row p-0 mb-2">
+        <div class="col-12">
+          <h4>Danh mục</h4>
         </div>
-        <div class="category-card col-lg-4 col-md-4 col-sm-12 col-12">
-          <img class="category-image" src="assets/image/homepage/Nesoberi.jpeg">
-          <h3 class="category-title">Nesoberi</h3>
+        <div *ngFor="let f of featured" class="category-card col-lg-4 col-md-4 col-sm-12 col-12 mb-2">
+          <img class="category-image" [src]="f.img" [alt]="f.title">
+          <h6 class="category-title d-flex justify-content-center">{{f.title}}</h6>
         </div>
-        <div class="category-card col-lg-4 col-md-4 col-sm-12 col-12">
-          <img class="category-image" src="assets/image/homepage/Cartoon.jpg">
-          <h3 class="category-title">Hoạt hình</h3>
+<!--        <div class="category-card col-lg-4 col-md-4 col-sm-12 col-12">-->
+<!--          <img class="category-image" src="assets/image/homepage/Nesoberi.jpeg">-->
+<!--          <h3 class="category-title">Nesoberi</h3>-->
+<!--        </div>-->
+<!--        <div class="category-card col-lg-4 col-md-4 col-sm-12 col-12">-->
+<!--          <img class="category-image" src="assets/image/homepage/Cartoon.jpg">-->
+<!--          <h3 class="category-title">Hoạt hình</h3>-->
+<!--        </div>-->
+<!--        <div class="category-card col-lg-4 col-md-4 col-sm-12 col-12">-->
+<!--          <img class="category-image" src="assets/image/homepage/Food.jpeg">-->
+<!--          <h3 class="category-title">Đồ ăn</h3>-->
+<!--        </div>-->
+<!--        <div class="category-card col-lg-4 col-md-4 col-sm-12 col-12">-->
+<!--          <img class="category-image" src="assets/image/homepage/Keychain.jpg">-->
+<!--          <h3 class="category-title">Móc chìa khóa</h3>-->
+<!--        </div>-->
+<!--        <div class="category-card col-lg-4 col-md-4 col-sm-12 col-12">-->
+<!--          <img class="category-image" src="assets/image/homepage/hugging.jpeg">-->
+<!--          <h3 class="category-title">Gối bông</h3>-->
+<!--        </div>-->
+      </div>
+      <div class="row p-0">
+        <div class="col-12">
+          <h4>Sản phẩm bán chạy</h4>
         </div>
-        <div class="category-card col-lg-4 col-md-4 col-sm-12 col-12">
-          <img class="category-image" src="assets/image/homepage/Food.jpeg">
-          <h3 class="category-title">Đồ ăn</h3>
-        </div>
-        <div class="category-card col-lg-4 col-md-4 col-sm-12 col-12">
-          <img class="category-image" src="assets/image/homepage/Keychain.jpg">
-          <h3 class="category-title">Móc chìa khóa</h3>
-        </div>
-        <div class="category-card col-lg-4 col-md-4 col-sm-12 col-12">
-          <img class="category-image" src="assets/image/homepage/hugging.jpeg">
-          <h3 class="category-title">Gối bông</h3>
+        <div *ngFor="let f of featured" class="category-card col-lg-4 col-md-4 col-sm-12 col-12 mb-2">
+          <img class="category-image" [src]="f.img" [alt]="f.title">
+          <h6 class="category-title d-flex justify-content-center">{{f.title}}</h6>
         </div>
       </div>
-
     </div>
 
   </nb-card-body>

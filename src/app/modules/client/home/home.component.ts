@@ -1,6 +1,7 @@
 import {Component, Input} from '@angular/core';
 import {NbCardModule} from '@nebular/theme';
 import {NgForOf} from '@angular/common';
+import {featured} from '../../../../assets/data/featured/featured';
 
 @Component({
   selector: 'app-home',
@@ -43,4 +44,5 @@ export class HomeComponent {
       description: 'A basic, white, round cat wearing a ninja costume'
     }
   ];*/
+  protected readonly featured = featured;
 }

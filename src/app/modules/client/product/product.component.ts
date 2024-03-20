@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {NbCardModule, NbCheckboxModule, NbSidebarModule} from '@nebular/theme';
+import {NbCardModule, NbCheckboxModule, NbFormFieldModule, NbSelectModule, NbSidebarModule} from '@nebular/theme';
 import {NgForOf} from '@angular/common';
 
 @Component({
@@ -10,6 +10,8 @@ import {NgForOf} from '@angular/common';
     NgForOf,
     NbSidebarModule,
     NbCheckboxModule,
+    NbSelectModule,
+    NbFormFieldModule,
   ],
   templateUrl: './product.component.html',
   styleUrl: './product.component.css'
