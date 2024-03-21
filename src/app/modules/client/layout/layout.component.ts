@@ -19,7 +19,7 @@ export class LayoutComponent {
     },
     {
       title: 'Đơn hàng',
-      route: '#',
+      route: '/client/order',
       responsive: true,
     },
     {

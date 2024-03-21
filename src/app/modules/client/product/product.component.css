@@ -28,7 +28,8 @@
 
 /*Nút kích cỡ và nút thêm vào giỏ*/
 .size-btn{
-  margin-right:12px;
+  margin-right:6px;
+  margin-left:6px;
 }
 
 .add-to-cart-btn-area{

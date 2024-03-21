@@ -40,7 +40,7 @@
         <div class="product-content col-9 col-md-9 col-sm-12 col-12">
           <div class="row">
             <div *ngFor="let f of product" class="product-card col-lg-4 col-md-4 col-sm-12 col-12 mb-2">
-              <img class="product-card-image" [src]="f.img" [alt]="f.title">
+              <img class="product-card-image mb-2" [src]="f.img" [alt]="f.title">
               <h5 class="product-card-title d-flex justify-content-center">{{f.title}}</h5>
               <h6 class="product-card-price d-flex justify-content-center">{{f.price}}</h6>
               <div class="size-btn-area d-flex justify-content-center">
