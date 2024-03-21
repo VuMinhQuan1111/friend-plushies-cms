@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import {NbCardModule, NbCheckboxModule, NbFormFieldModule, NbSelectModule, NbSidebarModule} from '@nebular/theme';
+import {NbButtonModule, NbCardModule, NbCheckboxModule, NbFormFieldModule, NbSelectModule, NbSidebarModule} from '@nebular/theme';
 import {NgForOf} from '@angular/common';
+import {product} from '../../../../assets/data/product/product'
 
 @Component({
   selector: 'app-product',
@@ -12,10 +13,11 @@ import {NgForOf} from '@angular/common';
     NbCheckboxModule,
     NbSelectModule,
     NbFormFieldModule,
+    NbButtonModule
   ],
   templateUrl: './product.component.html',
   styleUrl: './product.component.css'
 })
 export class ProductComponent {
-
+  protected readonly product = product;
 }

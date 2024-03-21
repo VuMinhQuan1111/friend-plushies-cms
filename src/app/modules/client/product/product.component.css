@@ -1,13 +1,46 @@
-.product-image{
-  width:100%;
-  height:350px;
+/*Ảnh banner*/
+.product-image {
+  width: 100%;
+  height: 350px;
   object-fit: cover;
   filter: brightness(50%);
 }
+
 .centered {
   position: absolute;
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/*Tiêu đề sản phẩm*/
+.product-card-title{
+  color: #FF8200;
+}
+
+/*Ảnh sản phẩm*/
+.product-card-image{
+  border-radius:20px;
+  object-fit:cover;
+  height:300px;
+  width:100%;
+}
+
+/*Nút kích cỡ và nút thêm vào giỏ*/
+.size-btn{
+  margin-right:12px;
+}
+
+.add-to-cart-btn-area{
+  padding:10px;
+}
+
+/*.add-to-cart-btn{
+  background: #FF8200;
+  color:white;
+  padding:15px;
+  border-radius:20px;
+  border: 1px solid lightgray;
+}*/
+
 

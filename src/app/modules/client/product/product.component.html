@@ -38,7 +38,22 @@
           </div>
         </div>
         <div class="product-content col-9 col-md-9 col-sm-12 col-12">
-          Hello World
+          <div class="row">
+            <div *ngFor="let f of product" class="product-card col-lg-4 col-md-4 col-sm-12 col-12 mb-2">
+              <img class="product-card-image" [src]="f.img" [alt]="f.title">
+              <h5 class="product-card-title d-flex justify-content-center">{{f.title}}</h5>
+              <h6 class="product-card-price d-flex justify-content-center">{{f.price}}</h6>
+              <div class="size-btn-area d-flex justify-content-center">
+                <button class="size-btn" nbButton outline size="small" shape="semi-round" status="warning">20cm</button>
+                <button class="size-btn" nbButton outline size="small" shape="semi-round" status="warning">30cm</button>
+                <button class="size-btn" nbButton outline size="small" shape="semi-round" status="warning">40cm</button>
+              </div>
+
+              <div class="add-to-cart-btn-area d-flex justify-content-center">
+                <button class="add-to-cart-btn" nbButton hero status="warning">Thêm vào giỏ hàng</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

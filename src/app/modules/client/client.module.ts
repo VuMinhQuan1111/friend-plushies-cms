@@ -2,7 +2,7 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 
 import {ClientRoutingModule} from './client-routing.module';
-import {NbLayoutModule} from '@nebular/theme';
+import {NbButtonModule, NbLayoutModule} from '@nebular/theme';
 
 
 @NgModule({
@@ -11,6 +11,7 @@ import {NbLayoutModule} from '@nebular/theme';
     CommonModule,
     ClientRoutingModule,
     NbLayoutModule
+
   ]
 })
 export class ClientModule { }

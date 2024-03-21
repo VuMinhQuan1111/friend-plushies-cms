@@ -18,6 +18,11 @@ export class LayoutComponent {
       responsive: true,
     },
     {
+      title: 'Đơn hàng',
+      route: '#',
+      responsive: true,
+    },
+    {
       title: 'Giới thiệu',
       route: '/client/intro',
       responsive: true,

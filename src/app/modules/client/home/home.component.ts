@@ -1,14 +1,15 @@
 import {Component, Input} from '@angular/core';
-import {NbCardModule} from '@nebular/theme';
+import {NbButtonModule, NbCardModule} from '@nebular/theme';
 import {NgForOf} from '@angular/common';
 import {featured} from '../../../../assets/data/featured/featured';
-
+import {category} from '../../../../assets/data/category/category';
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [
     NbCardModule,
-    NgForOf
+    NgForOf,
+    NbButtonModule
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
@@ -45,4 +46,5 @@ export class HomeComponent {
     }
   ];*/
   protected readonly featured = featured;
+  protected readonly category = category;
 }

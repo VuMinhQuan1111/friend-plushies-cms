@@ -4,4 +4,34 @@
   height:250px;
   width:100%;
 }
+/*Tiêu đề sản phẩm*/
+.product-title{
+  color:#FF8200;
+}
+
+
+/*Ảnh sản phẩm*/
+.product-image{
+  border-radius:20px;
+  object-fit:cover;
+  height:300px;
+  width:100%;
+}
+
+/*CSS Nút của sản phẩm*/
+.size-btn{
+  margin-right:12px;
+}
+
+.add-to-cart-btn-area{
+  padding:10px;
+}
+
+/*.add-to-cart-btn{
+  background: #FF8200;
+  color:white;
+  padding:15px;
+  border-radius:20px;
+  border: 1px solid lightgray;
+}*/
 
