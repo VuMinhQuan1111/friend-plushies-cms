@@ -6,7 +6,7 @@ import {RouterModule} from '@angular/router';
 import {AppRoutingModule} from './app-routing.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
-import {LocationStrategy, PathLocationStrategy} from '@angular/common';
+import {CommonModule, LocationStrategy, PathLocationStrategy} from '@angular/common';
 import {NbLayoutComponent, NbLayoutModule, NbRouteTabsetModule, NbTabsetModule, NbThemeModule} from '@nebular/theme';
 import {ClientModule} from './modules/client/client.module';
 import {AdminModule} from './modules/admin/admin.module';
@@ -34,6 +34,7 @@ import {NgImageSliderModule} from 'ng-image-slider';
 
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     RouterModule,
     AppRoutingModule,
